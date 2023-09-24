@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem;
+    font-size: 1rem;
+}
+
+h1 {
+    color: rgb(17, 17, 17);
+    text-align: center; 
+    padding: 0.5rem;   
+   
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+}
+
+#corpo video {
+    display: block;
+    margin: 0 auto;
+    width: 500px; 
+}
+
+.imagens { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto; 
+}
+
+img {
+    height: 200px;
+    width: auto;
+    margin: 5px;
+    object-fit: fill;
+    object-position: bottom;
+
+    &:hover {
+        opacity: 85%;
+    }   
+}
+        
+header {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    width: 100%;
+    position: relative;
+    height: 50%;
+    overflow: hidden;
+
+}
+
+footer p {
+    background-color: rgb(238,174,202);
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: center;  
+}
+
+.waves{
+    right:0;
+    left:0;
+    bottom: 0;
+    width: 110%;
+    opacity: 80%;
+}
+
+.wave-1{
+    animation: moveWave1 3s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave1{
+    from {
+        transform: translateX(-50px);
+    }
+
+}
+
+.wave-2{
+    animation: moveWave2 3s ease-in-out infinite alternate
+}
+
+@keyframes moveWave2{
+    from {
+        transform: translateX(-100px);
+    }
+}
+
+.wave-3{
+    animation: moveWave3 3s ease-out infinite alternate;
+}
+
+@keyframes moveWave3{
+    from {
+        transform: translateX(-50px);
+    }
+}
+
+

@@ -1,0 +1,58 @@
+/*.player {
+    .fa {
+        font-size: 30px;
+    }
+
+    position: relative;
+    display: flex;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+
+    .controls {
+        background-color: aqua;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        opacity: 0.3;
+        padding: 2rem;
+        transition: opacity 0.5s;
+
+        &:hover {
+            opacity: 2;
+        }
+
+        button {
+            background: transparent;
+            color: black;
+            font-weight: bolder;
+            text-shadow: 2px 1px 2px black;
+            border: none;
+            cursor: pointer;
+        }
+
+        .timeline {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            border: none;
+            border-right: 2px solid black;
+            border-left: 2px solid black;
+
+            .bar {
+                background: gray;
+                height: 4px;
+                flex: 1;
+
+                .inner {
+                    background: black;
+                    width: 0%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}*/
